@@ -1,0 +1,5 @@
+#!/bin/bash
+java_path=$(pwd)/jre1.8.0_73/
+export LD_LIBRARY_PATH=${java_path}lib/amd64/:${java_path}lib/i386/:$LD_LIBRARY_PATH
+JAVA=${java_path}bin/java
+"$JAVA" -jar RuneLite.jar
